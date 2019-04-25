@@ -86,19 +86,10 @@ public class FullNews extends AppCompatActivity {
                 for (int i = 0 ;i< list.size();i++){
                     Element item = list.get(i);
 
-                    String paragraph = String.valueOf(item.select("p"));
+                    String paragraph = String.valueOf(item.select("p").text());
                    // Log.d("ItemParagraph",paragraph);
 
-                    textView.setText(paragraph.replace("<p>","").
-                            replace("</p>","\n").trim().
-                            replace("<p class=\"wp-caption-text\">","").
-                            replace("<strong>","").
-                            replace("</strong>","").
-                            replace("<br>","").
-                            replace("</kg","").
-                            replace("&nbsp","")
-                            .replace("<p style=\"text-align: center;\">","")
-                            .replace("<p style=\"text-align: right;\">","").replace("<em>","").replace("</em>",""));
+                    textView.setText(paragraph);
 
 
 
