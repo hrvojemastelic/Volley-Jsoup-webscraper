@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hit_radio"
+            android:icon="@drawable/ic_hearing_black_24dp"
+            android:title="HITRADIO" />
+
+        <item
+            android:id="@+id/nav_naslovnica"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Naslovnica" />
+        <item
+            android:id="@+id/nav_vijesti"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Vijesti" />
+        <item
+            android:icon="@drawable/ic_menu_manage"
+            android:id="@+id/nav_sport"
+            android:title="Sport" />
+        <item
+            android:id="@+id/nav_kultura"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Kultura"/>
+        <item
+            android:icon="@drawable/ic_menu_gallery"
+            android:id="@+id/nav_crna_kronika"
+            android:title="Crna Kronika"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
